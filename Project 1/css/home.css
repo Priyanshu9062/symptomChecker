@@ -1,0 +1,133 @@
+/* General styles for home page */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+/* Navigation styles */
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.nav-links a.active {
+    color: #FFD700;
+    text-decoration: underline;
+    font-weight: bold;
+    transform: scale(1.1);
+}
+
+.section {
+    padding: 100px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 50px;
+    width: 90%;
+    max-width: 800px;
+}
+
+/* About Us, Our Target, Contact */
+.about, .target, .doctors, .contact {
+    margin-top: 50px;
+}
+
+h2 {
+    font-size: 36px;
+    color: #FFD700;
+}
+
+p, ul {
+    font-size: 18px;
+    color: #f2f2f2;
+    line-height: 1.6;
+}
+
+.doctor-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.doctor {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px;
+    width: 30%;
+}
+
+.doctor h3 {
+    color: #333;
+}
+
+.doctor p {
+    color: #666;
+}
+
+/* Social media popup */
+.social-popup {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    z-index: 9999;
+}
+
+.social-popup a {
+    text-decoration: none;
+}
+
+.social-popup img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-popup img:hover {
+    transform: scale(1.1);
+}

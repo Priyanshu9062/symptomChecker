@@ -1,0 +1,114 @@
+/* General styles for header and navigation */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('../assets/background.jpg'); /* Same background as the home page */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.8); /* Transparent black background */
+    padding: 20px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    flex-direction: column; /* Stack the content (logo and nav) vertically */
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 36px;
+    text-align: center; /* Center the header text */
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox to align the items in a row */
+    justify-content: center; /* Center the links horizontally */
+    gap: 20px; /* Add space between the navigation links */
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-links a.active {
+    color: #FFD700;
+    text-decoration: underline;
+    font-weight: bold;
+    transform: scale(1.1);
+}
+
+
+.section {
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    margin: 20px;
+    border-radius: 10px;
+    color: white;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #FFD700; /* Gold color for headings */
+}
+
+p {
+    font-size: 18px;
+    color: #f2f2f2;
+    line-height: 1.6;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 18px;
+    color: #f2f2f2;
+}
+
+input, select, button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+input[type="date"], input[type="time"] {
+    font-family: 'Arial', sans-serif;
+}

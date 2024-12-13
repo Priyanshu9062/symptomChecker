@@ -1,0 +1,78 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../assets/background.jpg'); /* Same background as the home page */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.8); /* Transparent black background */
+    padding: 20px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+/* General navigation styles */
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Underline effect for active link */
+.nav-links a.active {
+    color: #FFD700; /* Gold color for active link */
+    text-decoration: underline;
+    font-weight: bold;
+    transform: scale(1.1); /* Zoom in effect for active link */
+}
+
+/* Disable pointer events for the active link (can't click it) */
+.nav-links a.disabled {
+    pointer-events: none;
+    color: #555; /* Dim color for disabled link */
+    cursor: not-allowed;
+}
+
+.section {
+    padding: 50px;
+    background-color: #ffffff;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+    border-radius: 10px;
+}

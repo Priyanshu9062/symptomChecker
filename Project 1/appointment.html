@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Consultation - Health Companion</title>
+    <link rel="stylesheet" href="css/appointment.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Health Companion</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="identify-illness.html">Identify Illness</a></li>
+                <li><a href="medicine.html">Medicine & Doses</a></li>
+                <li><a href="appointment.html" class="active">Online Consultation</a></li>
+                <li><a href="nearest-hospital.html">Find Nearest Hospital</a></li>
+                <li><a href="feedback.html">Review & Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section">
+        <h2>Book an Online Consultation</h2>
+        <p>Fill out the form below to schedule a consultation with one of our healthcare professionals.</p>
+        
+        <form id="appointment-form">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="date">Preferred Date</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Preferred Time</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="specialization">Choose Specialization</label>
+            <select id="specialization" name="specialization" required>
+                <option value="General Physician">General Physician</option>
+                <option value="Pediatrician">Pediatrician</option>
+                <option value="Dermatologist">Dermatologist</option>
+                <option value="Cardiologist">Cardiologist</option>
+                <option value="Orthopedic">Orthopedic</option>
+            </select>
+
+            <button type="submit">Book Consultation</button>
+        </form>
+    </section>
+
+    <script src="js/appointment.js" defer></script>
+</body>
+</html>

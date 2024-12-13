@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Nearest Hospital - Health Companion</title>
+    <link rel="stylesheet" href="css/nearest-hospital.css">
+    <script src="https://maps.gomaps.pro/maps/api/js?key=AlzaSyuWqXa_hLG7eeIKNL8O3bZfzAHqySO32Ag&libraries=geometry,places&callback=initMap" async defer></script>
+</head>
+<body>
+    <header class="header">
+        <h1>Health Companion</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="identify-illness.html">Identify Illness</a></li>
+                <li><a href="medicine.html">Medicine & Doses</a></li>
+                <li><a href="appointment.html">Online Consultation</a></li>
+                <li><a href="nearest-hospital.html" class="active">Find Nearest Hospital</a></li>
+                <li><a href="feedback.html">Review & Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section">
+        <h2>Find Nearest Hospital</h2>
+        <div id="map"></div>
+    </section>
+
+    <script src="js/nearest-hospital.js" defer></script>
+</body>
+</html>

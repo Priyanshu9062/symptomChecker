@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identify Illness - Health Companion</title>
+    <link rel="stylesheet" href="css/identify-illness.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Health Companion</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" id="home-link">Home</a></li>
+                <li><a href="identify-illness.html" id="illness-link">Identify Illness</a></li>
+                <li><a href="medicine.html" id="medicine-link">Medicine & Doses</a></li>
+                <li><a href="appointment.html" id="appointment-link">Online Consultation</a></li>
+                <li><a href="nearest-hospital.html" id="hospital-link">Find Nearest Hospital</a></li>
+                <li><a href="feedback.html" id="feedback-link">Review & Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Select Your Symptoms</h2>
+        <form id="symptoms-form">
+            <div class="symptoms-list">
+                <label><input type="checkbox" name="symptom" value="Fever"> Fever</label>
+                <label><input type="checkbox" name="symptom" value="Cough"> Cough</label>
+                <label><input type="checkbox" name="symptom" value="Headache"> Headache</label>
+                <label><input type="checkbox" name="symptom" value="Fatigue"> Fatigue</label>
+                <label><input type="checkbox" name="symptom" value="Sore Throat"> Sore Throat</label>
+                <label><input type="checkbox" name="symptom" value="Shortness of Breath"> Shortness of Breath</label>
+                <label><input type="checkbox" name="symptom" value="Nausea"> Nausea</label>
+                <label><input type="checkbox" name="symptom" value="Dizziness"> Dizziness</label>
+                <label><input type="checkbox" name="symptom" value="Chest Pain"> Chest Pain</label>
+                <label><input type="checkbox" name="symptom" value="Stomach Ache"> Stomach Ache</label>
+            </div>
+
+            <div class="other-symptoms">
+                <label for="other">Other Symptoms:</label>
+                <textarea id="other" name="other-symptoms" placeholder="Describe any additional symptoms..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+
+        <div id="medicine-recommendation" style="display:none;">
+            <h3>Medicine Recommendation</h3>
+            <p id="medicine-name"></p>
+            <p id="medicine-dose"></p>
+            <p>Before consuming any medicine, please consult with a doctor. You can purchase this medicine directly from our website with a 20% discount.</p>
+        </div>
+    </main>
+
+    <script src="js/identify-illness.js" defer></script>
+</body>
+</html>

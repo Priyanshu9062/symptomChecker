@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review & Feedback - Health Companion</title>
+    <link rel="stylesheet" href="css/feedback.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Health Companion</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="identify-illness.html">Identify Illness</a></li>
+                <li><a href="medicine.html">Medicine & Doses</a></li>
+                <li><a href="appointment.html">Online Consultation</a></li>
+                <li><a href="nearest-hospital.html">Find Nearest Hospital</a></li>
+                <li><a href="feedback.html" class="active">Review & Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section">
+        <h2>Leave Your Review</h2>
+        <form id="review-form">
+            <label for="feedback">Your Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" required></textarea>
+        
+            <label for="rating">Rating (1 to 5):</label>
+            <div class="star-rating">
+                <input type="radio" id="star1" name="rating" value="1"><label for="star1">☆</label>
+                <input type="radio" id="star2" name="rating" value="2"><label for="star2">☆</label>
+                <input type="radio" id="star3" name="rating" value="3"><label for="star3">☆</label>
+                <input type="radio" id="star4" name="rating" value="4"><label for="star4">☆</label>
+                <input type="radio" id="star5" name="rating" value="5"><label for="star5">☆</label>
+            </div>
+        
+            <button type="submit">Submit Review</button>
+        </form>
+        
+        <h2>Recent Reviews</h2>
+        <div class="reviews">
+            <div class="review">
+                <p><strong>John Doe</strong> <span class="stars">★★★★★</span></p>
+                <p>Great app! It helped me find the right medicines for my illness quickly.</p>
+            </div>
+            <div class="review">
+                <p><strong>Jane Smith</strong> <span class="stars">★★★★☆</span></p>
+                <p>Very useful for booking doctor appointments. Would love to see more features.</p>
+            </div>
+            <div class="review">
+                <p><strong>Michael Brown</strong> <span class="stars">★★★★★</span></p>
+                <p>I found a hospital near me with ease. Excellent service!</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/feedback.js" defer></script>
+</body>
+</html>
