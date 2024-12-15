@@ -119,7 +119,7 @@ button:hover {
 
 /* Active stars after selection (no hover effect, selected stars remain gold) */
 .star-rating input:checked ~ label {
-    color: #FFD700; /* Gold color for checked stars */
+    color: #eed545; /* Gold color for checked stars */
 }
 
 
