@@ -58,7 +58,7 @@ body {
 
 .section {
     padding: 50px;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
     margin: 20px;
     border-radius: 10px;
     color: white;
