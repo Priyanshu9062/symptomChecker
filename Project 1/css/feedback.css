@@ -3,7 +3,7 @@ body {
     font-family: 'Arial', sans-serif;
     background-image: url('../assets/background.jpg'); /* Same background as the home page */
     background-size: cover;
-    background-position: center; 
+    background-position: center;
     background-attachment: fixed;
     margin: 0;
     padding: 0;
